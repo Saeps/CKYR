@@ -20,19 +20,19 @@ class TestCalculator(unittest.TestCase):
     # def test_multiply(self): # 3 assertions
     #     fill in code
     def test_multiply(self):
-        self.assertEqual(calculator.multiply(3, 4), 12)
-        self.assertEqual(calculator.multiply(-2, 5), -10)
-        self.assertEqual(calculator.multiply(0, 8), 0)
+        self.assertEqual(calculator.mul(3, 4), 12)
+        self.assertEqual(calculator.mul(-2, 5), -10)
+        self.assertEqual(calculator.mul(0, 8), 0)
 
 
     # def test_divide(self): # 3 assertions
     #     fill in code
     # ##########################
     def test_divide(self):
-        self.assertEqual(calculator.divide(2, 10), 5)
-        self.assertEqual(calculator.divide(5, -15), -3)
+        self.assertEqual(calculator.div(2, 10), 5)
+        self.assertEqual(calculator.div(5, -15), -3)
         with self.assertRaises(ZeroDivisionError):
-            calculator.divide(0, 5)
+            calculator.div(0, 5)
     ######## Partner 2
     def test_divide_by_zero(self): # 1 assertion
     #     # call division function inside, example:

@@ -30,13 +30,21 @@ class TestCalculator(unittest.TestCase):
     #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
     #     #     div(0, 5)
     #     fill in code
+        with self.assertRaises("Division by zero"):
+            calculator.div(0, 8)
 
-    # def test_logarithm(self): # 3 assertions
-    #     fill in code
+    def test_logarithm(self): # 3 assertions
+        self.assertEqual(calculator.logarithm(100, 10), 2)
+        self.assertEqual(calculator.logarithm(27, 3), 3)
+        self.assertEqual(calculator.logarithm(32, 2), 5)
+        
 
     # def test_log_invalid_base(self): # 1 assertion
     #     # use same technique from test_divide_by_zero
     #     fill in code
+        with self.assertRaises("Invalid input for logarithm"):
+            calculator.logarithm(0, 8)
+        
     # ##########################
     
     ######## Partner 1

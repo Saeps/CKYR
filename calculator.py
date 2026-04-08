@@ -4,7 +4,8 @@ calculator.py
 
 One function per operation, in order.
 """
-# First example
+import math
+
 def square_root(a):
     if a < 0:
         raise ValueError("Cannot take square root of negative number")
@@ -17,6 +18,7 @@ def subtract(a,b):
     return a - b
 def multiply(a,b):
     return a * b
+def div:    
     if a == 0:
         raise ZeroDivisionError("Division by zero")
     return b / a

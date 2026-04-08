@@ -4,9 +4,15 @@ from calculator import *
 class TestCalculator(unittest.TestCase):
     ######### Partner 2
     def test_add(self): # 3 assertions
-    #     fill in code
+        self.assertEqual(calculator.add(1, 2), 3)
+        self.assertEqual(calculator.add(3, 4), 7)
+        self.assertEqual(calculator.add(5, 6), 11)
 
     def test_subtract(self): # 3 assertions
+        self.assertEqual(calculator.subtract(3, 2), 1)
+        self.assertEqual(calculator.subtract(6, 7), -1)
+        self.assertEqual(calculator.subtract(10, 3), 7)
+        
     #     fill in code
     # ##########################
 
